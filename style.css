@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    justify-items: center;
+}
+
+header {
+    background-color: #3e8e41;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    max-width: 120px;
+    margin-right: 20px;
+}
+
+header .Navbar {
+    text-align: left;
+    flex: 1;
+}
+
+header h1 {
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header img {
+        margin: 0 0 10px;
+    }
+
+    header .Navbar {
+        text-align: center;
+    }
+}
+
+.Nav {
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.Nav form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.Nav form p {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin: 0;
+    width: 100%;
+    max-width: 500px;
+}
+
+.Nav form p label {
+    width: 30%;
+    text-align: left;
+    font-weight: bold;
+}
+
+.Nav input[type="text"],
+.Nav input[type="number"],
+.Nav select {
+    flex: 1;
+    padding: 10px;
+    margin: 0;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.Nav input[type="submit"] {
+    background-color: white;
+    padding: 10px 20px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    width: 100px;
+    text-align: center;
+}
+
+.tabel-input {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #3e8e41;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 18px;
+    }
+
+    .Nav form p {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .Nav form p label {
+        width: 100%;
+    }
+
+    .Nav input[type="text"],
+    .Nav input[type="number"],
+    .Nav select {
+        width: 100%;
+    }
+
+    table {
+        width: 100%;
+    }
+}
+
+.btn {
+    background-color: white;
+    padding: 10px 20px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.tabel {
+    justify-items: center;
+}
